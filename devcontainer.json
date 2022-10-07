@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/python-3
 {
-	"name": "Hoogii Wallet",
+	"name": "hoogii frontend",
 	"build": {
 		"dockerfile": "Dockerfile",
 		"context": "..",
@@ -20,7 +20,7 @@
 		// Configure properties specific to VS Code.
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
-			"settings": { 
+			"settings": {
 				"terminal.integrated.defaultProfile.linux": "zsh",
 				"terminal.integrated.profiles.linux": {
 					"zsh": {
@@ -28,21 +28,23 @@
 					}
 				},
 				"editor.formatOnSave": true,
+				"editor.codeActionsOnSave": {
+					"source.fixAll": true,
+					"source.sortImports": true
+				},
 				"[typescriptreact]": {
 					"editor.defaultFormatter": "esbenp.prettier-vscode"
 				},
 			},
-			
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"ms-python.python",
-				"ms-python.vscode-pylance",
-				"vivaxy.vscode-conventional-commits",
-				"mhutchie.git-graph",
-				"bradlc.vscode-tailwindcss",
-				"VisualStudioExptTeam.vscodeintellicode",
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"visualstudioexptteam.vscodeintellicode",
 				"streetsidesoftware.code-spell-checker",
-				"esbenp.prettier-vscode"
+				"bradlc.vscode-tailwindcss",
+				"aaron-bond.better-comments",
+				"naumovs.color-highlight"
 			]
 		}
 	},
