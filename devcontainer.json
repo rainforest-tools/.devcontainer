@@ -44,7 +44,8 @@
 				"streetsidesoftware.code-spell-checker",
 				"bradlc.vscode-tailwindcss",
 				"aaron-bond.better-comments",
-				"naumovs.color-highlight"
+				"naumovs.color-highlight",
+				"unifiedjs.vscode-mdx"
 			]
 		}
 	},
